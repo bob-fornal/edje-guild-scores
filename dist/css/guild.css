@@ -1,0 +1,52 @@
+
+:root {
+  --edje-green: #96c93d;
+}
+
+.title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.5em;
+  text-align: center;
+  text-shadow: var(--edje-green) 2px 2px;
+}
+
+.content {
+  align-items: flex-start;
+  display: flex;
+}
+
+.left,
+.right {
+  background-color: silver;
+  display: inline-block;
+  flex-grow: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 1em;
+  padding: 1em;
+}
+
+#people,
+#guild {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#people th,
+#people td,
+#guild th,
+#guild td {
+  background-color: var(--edje-green);
+  text-align: center;
+  padding: 1em;
+}
+
+#people th,
+#people td,
+#guild th,
+#guild td {
+    border-bottom: 1px solid gray;
+}
+
