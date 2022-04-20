@@ -1,6 +1,8 @@
 
 :root {
-  --edje-green: #96c93d;
+  --edje-green: rgb(150, 201, 61);
+  --edje-green-lighter: rgb(200, 255, 111);
+  --edje-green-darker: rgb(115, 166, 26);
 }
 
 .title {
@@ -40,13 +42,27 @@
 }
 
 #people th,
-#people td,
-#guild th,
-#guild td {
-  background-color: var(--edje-green);
+#guild th {
+  background-color: var(--edje-green-darker);
   text-align: center;
   padding: 2vh;
 }
+
+#people td,
+#guild td {
+  text-align: center;
+  padding: 2vh;
+}
+
+#people tr:nth-child(2n),
+#guild tr:nth-child(2n) {
+  background-color: var(--edje-green);
+}
+#people tr:nth-child(2n + 1),
+#guild tr:nth-child(2n + 1) {
+  background-color: var(--edje-green-lighter);
+}
+
 
 #people th,
 #people td,
