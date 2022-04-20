@@ -1,0 +1,31 @@
+
+.table {
+  display: table;
+  width: 100%;
+
+  .caption {
+    display: table-caption;
+  }
+  
+  .table-header {
+    display: table-header-group;
+
+    .table-header-cell {
+      display: table-cell;
+      font-weight: bold;
+    }
+  }
+  
+  .table-body {
+    display: table-row-group;
+
+    .table-cell {
+      display: table-cell;
+    }
+  }
+  
+  .table-row {
+    display: table-row;
+  }
+    
+}

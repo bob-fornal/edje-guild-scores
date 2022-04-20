@@ -1,0 +1,26 @@
+{
+  "name": "edje-guild-scores",
+  "version": "1.0.0",
+  "description": "## Requirements",
+  "main": "index.js",
+  "scripts": {
+    "copy": "rimraf ./dist && mkdir ./dist && mkdir ./dist/json && cp ./src/index.html ./dist && cp ./src/json/*.json ./dist/json",
+    "sass": "sass ./src/sass:./dist/css --style compressed",
+    "build": "npm run copy && tsc && npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bob-fornal/edje-guild-scores.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bob-fornal/edje-guild-scores/issues"
+  },
+  "homepage": "https://github.com/bob-fornal/edje-guild-scores#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "sass": "^1.50.1",
+    "typescript": "^4.6.3"
+  }
+}

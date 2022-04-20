@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/guild.css" />
+  </head>
+  <body>
+    <div class="title">
+      Leading EDJE Guild XP Leaderboard
+    </div>
+
+    <div class="content">
+      
+      <div class="left">
+        <div class="table" id="people">
+          <div class="table-header">
+            <div class="table-row">
+              <div class="table-header-cell">EDJEr</div>
+              <div class="table-header-cell">XP</div>
+            </div>
+          </div>
+          <div class="table-body"></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="table" id="guild">
+          <div class="table-header">
+            <div class="table-row">
+              <div class="table-header-cell">Guild</div>
+              <div class="table-header-cell">XP</div>
+            </div>
+          </div>
+          <div class="table-body"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <template id="row">
+      <div class="table-row">
+        <div class="table-cell name"></div>
+        <div class="table-cell score"></div>
+      </div>
+    </template>
+
+    <script src="js/guild.js"></script>
+  </body>
+</html>
