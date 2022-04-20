@@ -30,7 +30,7 @@
   display: inline-block;
   flex-grow: 1;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1vh;
+  font-size: 2vh;
   padding: 2vh;
 }
 
@@ -41,33 +41,32 @@
   width: 100%;
 }
 
-#people th,
-#guild th {
+#people .table-header-cell,
+#guild .table-header-cell {
   background-color: var(--edje-green-darker);
   text-align: center;
   padding: 2vh;
 }
 
-#people td,
-#guild td {
+#people .table-cell,
+#guild .table-cell {
   text-align: center;
   padding: 2vh;
 }
 
-#people tr:nth-child(2n),
-#guild tr:nth-child(2n) {
+#people .table-row:nth-child(2n),
+#guild .table-row:nth-child(2n) {
   background-color: var(--edje-green);
 }
-#people tr:nth-child(2n + 1),
-#guild tr:nth-child(2n + 1) {
+#people .table-row:nth-child(2n + 1),
+#guild .table-row:nth-child(2n + 1) {
   background-color: var(--edje-green-lighter);
 }
 
-
-#people th,
-#people td,
-#guild th,
-#guild td {
+#people .table-header-cell,
+#people .table-cell,
+#guild .table-header-cell,
+#guild .table-cell {
   border-bottom: 1px solid gray;
 }
 

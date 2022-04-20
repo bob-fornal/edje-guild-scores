@@ -2,8 +2,8 @@
 const minutesToRefreshPage = 30;
 
 class Guild {
-  leftElement = document.querySelector('#people tbody');
-  rightElement = document.querySelector('#guild tbody');
+  leftElement = document.querySelector('#people .table-body');
+  rightElement = document.querySelector('#guild .table-body');
 
   template;
   minutes;
@@ -54,7 +54,7 @@ class Guild {
       const position = index + 1;
 
       const clone = this.template.content.cloneNode(true);
-      const tds = clone.querySelectorAll('td');
+      const tds = clone.querySelectorAll('.table-cell');
 
       tds[0].textContent = `${ position }. ${ item.name }`;
       tds[1].textContent = item.xp;

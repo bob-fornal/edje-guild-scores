@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link rel="stylesheet" href="./css/table.css" />
     <link rel="stylesheet" href="./css/guild.css" />
   </head>
   <body>
@@ -10,36 +11,36 @@
     <div class="content">
       
       <div class="left">
-        <table id="people">
-          <thead>
-            <tr>
-              <th>EDJEr</th>
-              <th>XP</th>
-            </tr>  
-          </thead>
-          <tbody></tbody>
-        </table>
+        <div class="table" id="people">
+          <div class="table-header">
+            <div class="table-row">
+              <div class="table-header-cell">EDJEr</div>
+              <div class="table-header-cell">XP</div>
+            </div>
+          </div>
+          <div class="table-body"></div>
+        </div>
       </div>
 
       <div class="right">
-        <table id="guild">
-          <thead>
-            <tr>
-              <th>Guild</th>
-              <th>XP</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <div class="table" id="guild">
+          <div class="table-header">
+            <div class="table-row">
+              <div class="table-header-cell">Guild</div>
+              <div class="table-header-cell">XP</div>
+            </div>
+          </div>
+          <div class="table-body"></div>
+        </div>
       </div>
 
     </div>
 
     <template id="row">
-      <tr>
-        <td class="name"></td>
-        <td class="score"></td>
-      </tr>
+      <div class="table-row">
+        <div class="table-cell name"></div>
+        <div class="table-cell score"></div>
+      </div>
     </template>
 
     <script src="js/guild.js"></script>
