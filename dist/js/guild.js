@@ -56,9 +56,8 @@ class Guild {
       const clone = this.template.content.cloneNode(true);
       const tds = clone.querySelectorAll('td');
 
-      tds[0].textContent = position;
-      tds[1].textContent = item.name;
-      tds[2].textContent = item.xp;
+      tds[0].textContent = `${ position }. ${ item.name }`;
+      tds[1].textContent = item.xp;
 
       element.appendChild(clone);
     });

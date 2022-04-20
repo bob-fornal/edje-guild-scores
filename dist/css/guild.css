@@ -5,9 +5,9 @@
 
 .title {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 2em;
+  font-size: 4vh;
   font-weight: bold;
-  padding: 0.5em;
+  padding: 2vh;
   text-align: center;
   text-shadow: var(--edje-green) 2px 2px;
 }
@@ -15,6 +15,11 @@
 .content {
   align-items: flex-start;
   display: flex;
+  padding: 2vh;
+}
+
+.left {
+  margin-right: 2vh;
 }
 
 .left,
@@ -23,8 +28,8 @@
   display: inline-block;
   flex-grow: 1;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 1em;
-  padding: 1em;
+  font-size: 1vh;
+  padding: 2vh;
 }
 
 #people,
@@ -40,13 +45,13 @@
 #guild td {
   background-color: var(--edje-green);
   text-align: center;
-  padding: 1em;
+  padding: 2vh;
 }
 
 #people th,
 #people td,
 #guild th,
 #guild td {
-    border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
