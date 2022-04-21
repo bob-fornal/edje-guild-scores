@@ -9,6 +9,9 @@
 # Local History for Visual Studio Code
 .history/
  
+# Parcel Cache
+.parcel-cache/
+
 # Private Node Modules
 node_modules/
 

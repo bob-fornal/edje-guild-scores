@@ -44,12 +44,12 @@ class Guild {
   };
 
   getEdjers = async (): Promise<Array<DataType>> => {
-    const response: any = await fetch('./json/edjers.json');
+    const response: any = await fetch('./assets/json/edjers.json');
     return response.json();
   };
 
   getGuilds = async (): Promise<Array<DataType>> => {
-    const response: any = await fetch('./json/guilds.json');
+    const response: any = await fetch('./assets/json/guilds.json');
     return response.json();
   };
 
