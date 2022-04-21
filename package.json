@@ -6,7 +6,7 @@
     "copy-assets": "cp -r assets/* dist/assets",
     "init": "npm run clean-dist && npm run copy-assets",
     "start": "npm run init && parcel",
-    "build": "npm run init && parcel build"
+    "build": "npm run init && parcel build --no-source-maps"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.4.1",
