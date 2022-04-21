@@ -5,11 +5,12 @@
     "clean-dist": "rm -rf dist && mkdir dist && mkdir dist/assets",
     "copy-assets": "cp -r assets/* dist/assets",
     "init": "npm run clean-dist && npm run copy-assets",
-    "start": "npm run init && parcel",
+    "serve": "npm run init && parcel",
     "build": "npm run init && parcel build --no-source-maps"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.4.1",
-    "parcel": "latest"
+    "parcel": "latest",
+    "sharp": "^0.29.3"
   }
 }
