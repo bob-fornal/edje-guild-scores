@@ -10,18 +10,30 @@ class Guild {
   leftElement: any = document.querySelector('#people .table-body');
   rightElement: any = document.querySelector('#guild .table-body');
 
+  toggle: any = document.querySelector('.toggle-dark-mode');
+  body: any = document.querySelector('.body');
+
   template: any;
   minutes: number;
 
-  constructor(minutes: number) {
+  constructor(minutes: number, dark: boolean = true) {
     this.minutes = minutes;
-    this.init();
+    this.init(dark);
   }
 
-  init = async (): Promise<void> => {
+  init = async (dark: boolean): Promise<void> => {
+    this.toggle.addEventListener('click', this.handleToggleMode.bind(this));
+    if (dark === true) {
+      this.handleToggleMode();
+    }
+
     this.getTemplate();
     await this.processAll();
     this.startTimer();
+  };
+
+  handleToggleMode = () => {
+    this.body.classList.toggle('dark');
   };
 
   startTimer = (): void => {

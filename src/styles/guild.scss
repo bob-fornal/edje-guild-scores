@@ -3,6 +3,34 @@
   --edje-green: rgb(150, 201, 61);
   --edje-green-lighter: rgb(200, 255, 111);
   --edje-green-darker: rgb(115, 166, 26);
+
+
+}
+
+.body {
+
+  &.dark {
+    background-color: #222;
+
+    .title {
+      color: var(--edje-green);
+      text-shadow:
+      0 0 7px #555,
+      0 0 10px #555,
+      0 0 21px #0fa;  
+    }
+  }
+  &:not(.dark) {
+    background-color: white;  
+
+    .title {
+      color: var(--edje-green);
+      text-shadow:
+      0 0 7px #555,
+      0 0 10px #555,
+      0 0 21px #0fa;  
+    }
+  }
 }
 
 .title {
@@ -10,8 +38,14 @@
   font-size: 4vh;
   font-weight: bold;
   padding: 2vh;
+  position: relative;
   text-align: center;
-  text-shadow: var(--edje-green) 2px 2px;
+
+  .toggle-dark-mode {
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+  }
 }
 
 .content {
@@ -26,6 +60,7 @@
   .left,
   .right {
     background-color: silver;
+    color: black;
     display: inline-block;
     flex-grow: 1;
     font-family: Helvetica, Arial, sans-serif;
