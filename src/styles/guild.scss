@@ -10,7 +10,7 @@
 .body {
 
   &.dark {
-    background-color: #222;
+    background: linear-gradient(90deg, #000 0%, #222 30%, #444 100%) fixed;
 
     .title {
       color: var(--edje-green);
@@ -21,7 +21,7 @@
     }
   }
   &:not(.dark) {
-    background-color: white;  
+    background: linear-gradient(90deg, #ddd 0%, #ddd 20%, #fff 100%) fixed;
 
     .title {
       color: var(--edje-green);
